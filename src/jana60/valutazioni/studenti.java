@@ -3,12 +3,12 @@ package jana60.valutazioni;
 public class studenti {
 	
 	//attributi
-	int id,percentualeAssenze;
-	double mediaVoti;
+	int id,percentualeAssenze,mediaVoti;
+	 
 
 	
 	//costruttore
-	studenti(int id, int percentualeAssenze, float mediaVoti) {
+	studenti(int id, int percentualeAssenze, int mediaVoti) {
 		this.id = id;
 		this.percentualeAssenze = percentualeAssenze;
 		this.mediaVoti = mediaVoti;

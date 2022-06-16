@@ -1,0 +1,25 @@
+package jana60.valutazioni;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		//scanner
+		Scanner scan = new Scanner(System.in);
+		
+		studenti[] valutazioniStudenti = new studenti[2];
+		
+		for(int i=0; i < valutazioniStudenti.length; i++) {
+			System.out.println("inserisci le assenze dello studente: ");
+			int percentualeAssenze = scan.nextInt();
+			System.out.println("inserisci la media dei voti dello studente: ");
+			int mediaVoti = scan.nextInt();
+			valutazioniStudenti[i]= new studenti(i+1,percentualeAssenze,mediaVoti);
+		
+			
+		}
+	}
+
+}
