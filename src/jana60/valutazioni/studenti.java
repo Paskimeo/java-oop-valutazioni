@@ -13,4 +13,16 @@ public class studenti {
 		this.percentualeAssenze = percentualeAssenze;
 		this.mediaVoti = mediaVoti;
 		}
+	
+	//metodi
+	boolean risulatoFinale () {
+		boolean promozione = false;
+		
+		if (percentualeAssenze<25 && mediaVoti >=2) {
+			promozione = true;
+		}else if (percentualeAssenze<= 50 && mediaVoti >2) {
+			promozione = true;
+		}
+		return promozione;
+	}
 }
