@@ -18,7 +18,12 @@ public class main {
 			int mediaVoti = scan.nextInt();
 			valutazioniStudenti[i]= new studenti(i+1,percentualeAssenze,mediaVoti);
 		
-			
+		
+			if (valutazioniStudenti[i].risulatoFinale()) {
+				System.out.println("lo studente: " +valutazioniStudenti[i].id + " è stato promosso");
+			}else {
+				System.out.println("lo studente: " +valutazioniStudenti[i].id + " è stato bocciatto");
+			}
 		}
 	}
 
